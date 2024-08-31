@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/MokeponJS.js"></script>
+    <script defer src="/MokeponJS.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokepon!</title>
@@ -11,22 +11,26 @@
 
         <section id="Section-pet"> 
             <h2>Selecciona una mascota:</h2>
-            <label for="Hipoge">Hipoge</label>
-            <input id="Hipoge" type="radio" name="mascostas">
-            <label for=""></label>
-            <input type="radio" name="mascotas">
-            <label for=""></label>
-            <input type="radio" name="mascotas">
+
+            <label for="Hipodoge">Hipoge</label>
+            <input name="mascotas" type="radio" id="Hipodoge">
+            <label for="Capipepo">Capipepo</label>
+            <input name="mascotas" type="radio"  id="Capipepo">
+            <label for="Ratigueya">Ratigueya</label>
+            <input name="mascotas" type="radio" id="Ratigueya">
+
+            <button id="boton-mascota">Seleccionar</button>
+
         </section>
 
         <section id="section-attack"> 
             <div id="Buttons-attack">
                 <h2>Elige un ataque:</h2>
-                <p>Tu mascosta tiene <span>3</span> vidas</p>
-                <p>La mascota del enemigo tiene <span>3</span> vidas</p>
-                <button>Fuego</button>
-                <button>Agua</button>
-                <button>Tierra</button>
+                <p>Tu mascosta <span id="PlayerPET"></span> tiene <span>3</span> vidas</p>
+                <p>La mascota <span id="PCPET"></span> del enemigo tiene <span>3</span> vidas</p>
+                <button id="boton-fuego">Fuego</button>
+                <button id="boton-agua">Agua</button>
+                <button id="boton-tierra">Tierra</button>
             </div>    
         </section>
         
@@ -36,7 +40,7 @@
         </section>
 
         <section id="reiniciar">
-            <button>reiniciar</button>
+            <button id="boton-reiniciar">reiniciar</button>
         </section>
    
         
