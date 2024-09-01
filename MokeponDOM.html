@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./MokeponStyle.css">
     <script defer src="/MokeponJS.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokepon!</title>
 </head>
 <body>
-    <h1>Piedra, papel o tijera</h1>
+    <h1>MOKEPON</h1>
 
-        <section id="Section-pet"> 
+        <section id="Section-pet">
+            <div>
+
             <h2>Selecciona una mascota:</h2>
-
+            
             <label for="Hipodoge">Hipoge</label>
             <input name="mascotas" type="radio" id="Hipodoge">
             <label for="Capipepo">Capipepo</label>
@@ -20,28 +26,34 @@
             <input name="mascotas" type="radio" id="Ratigueya">
 
             <button id="boton-mascota">Seleccionar</button>
-
+            </div>
+            
         </section>
 
         <section id="section-attack"> 
             <div id="Buttons-attack">
                 <h2>Elige un ataque:</h2>
-                <p>Tu mascosta <span id="PlayerPET"></span> tiene <span>3</span> vidas</p>
-                <p>La mascota <span id="PCPET"></span> del enemigo tiene <span>3</span> vidas</p>
+                <p>Tu mascosta <span id="PlayerPET"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                <p>La mascota <span id="PCPET"></span> del enemigo tiene <span id="vidas-pc">3</span> vidas</p>
                 <button id="boton-fuego">Fuego</button>
                 <button id="boton-agua">Agua</button>
                 <button id="boton-tierra">Tierra</button>
             </div>    
         </section>
         
-        <section id="mensajes-combate">
-            <p>Tu mascosta ataco con</p>
-            <p>La mascosta del enemigo ataco con</p>
+        <section id="Combate">
+            <h3>Resultado Combate</h3>
+            <div id="tableros">
+                <div id="tablero-jugador"></div>
+                <div id="tablero-enemigo"></div>
+            </div>
         </section>
 
         <section id="reiniciar">
             <button id="boton-reiniciar">reiniciar</button>
         </section>
+
+        
    
         
 </body>

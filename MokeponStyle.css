@@ -1,0 +1,18 @@
+
+h1{
+    color: #380c64;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #4F1787;
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: #180161;
+}
+
+body {
+    background-color: #f98651;
+}
+
