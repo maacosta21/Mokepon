@@ -30,6 +30,7 @@ const mascotaPcDom = document.querySelector('#PCPET')
 const spanVidasJugador = document.querySelector('#vidas-jugador')
 const spanVidasPC = document.querySelector('#vidas-pc')
 
+
 //Fuego
 const ataqueFuego = document.querySelector('#boton-fuego')
 function fuego(){
@@ -115,6 +116,8 @@ function ataqueAleatorioEnemigo() {
 //Resultado combate
 const createResultadoJugador = document.querySelector('#tablero-jugador')
 const createResultadoPC = document.querySelector('#tablero-enemigo')
+const mesajeFinal = document.querySelector('#mensaje-final')
+
 function generarResultado() {
     if(ataqueJugador == 'Fuego' && ataquePC == 'Tierra') {
         resultado = 'Ganaste'
@@ -146,6 +149,16 @@ function generarResultado() {
     DisablePets()
 }
 
+function crearMensajeFinal() {
+    if(jugadorCounter == 0){
+        mesajeFinal.innerHTML = 'Perdiste'
+    } else if (pcCounter == 0) {
+        mesajeFinal.innerHTML = 'Ganaste'
+    }
+        
+}
+
+
 //Enable and disable Interface
 function DisablePets() {
 if(jugadorCounter == 0 || pcCounter == 0 ) {
@@ -159,6 +172,7 @@ if(jugadorCounter == 0 || pcCounter == 0 ) {
     sectionCombat.style.display = 'none'
     sectionAttacks.style.display = 'none'
 }
+crearMensajeFinal()
 }
 
 //Boton reiniciar
