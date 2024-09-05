@@ -17,8 +17,11 @@ const mascotaHipodoge = document.querySelector('#Hipodoge')
 const mascotaCapipepo = document.querySelector('#Capipepo')
 //secciones
 const sectionPet = document.querySelector('#Section-pet')
-
 const sectionAttacks = document.querySelector('#section-attack')
+const spanPlayerImage = document.querySelector('#Player-section')
+const spanEnemyImage = document.querySelector('#Enemy-section')
+
+
 sectionAttacks.style.display = 'none'
 
 const sectionCombat = document.querySelector('#Combate')
@@ -57,7 +60,17 @@ function tierra(){
 }
 
 ataqueTierra.addEventListener('click', tierra)
+//funtion Generate Pet pictures
 
+function generatePictures(sujeto, section){
+    if(sujeto == 'Hipodoge' ) {
+        section.innerHTML = '<img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Unable to load">'
+    }else if(sujeto == 'Capipepo'){
+        section.innerHTML = '<img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Unable to load">'
+    }else if(sujeto == 'Ratigueya') {
+        section.innerHTML = '<img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Unable to load">'
+    }
+}
 
 //Eleccion jugador
 botonMacostaJuagador.addEventListener('click', eleccionJugador)
@@ -72,7 +85,7 @@ function eleccionJugador() {
         jugadorMascota = 'Ratigueya'
         mascotaPCSelect()
     } else {alert('Elige una mascosta')}
-    
+    generatePictures(jugadorMascota, spanPlayerImage)  
 }
 
 function aleatorio(max, min) {
@@ -95,6 +108,7 @@ function mascotaPCSelect() {
     sectionAttacks.style.display = 'block'
     mascotaJugadorDom.innerHTML = jugadorMascota
     mascotaPcDom.innerHTML = pcMascota
+    generatePictures(pcMascota, spanEnemyImage)
 }
 
 //Ataque enemigo

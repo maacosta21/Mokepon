@@ -11,33 +11,60 @@
     <title>Mokepon!</title>
 </head>
 <body>
-    <h1>MOKEPON</h1>
-
+    
         <section id="Section-pet">
-            <div>
 
+            <h1 class="titulo">MOKEPON</h1>
+
+            
             <h2>Selecciona una mascota:</h2>
 
-            <label for="Hipodoge">Hipoge</label>
-            <input name="mascotas" type="radio" id="Hipodoge">
-            <label for="Capipepo">Capipepo</label>
-            <input name="mascotas" type="radio"  id="Capipepo">
-            <label for="Ratigueya">Ratigueya</label>
-            <input name="mascotas" type="radio" id="Ratigueya">
+            <div class="tarjetas">
+                <label class="tarjetas-mokepon" for="Hipodoge">
+                    <p>Hipodoge</p>
+                    <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Unable to load">
+                </label>
+                <input name="mascotas" type="radio" id="Hipodoge">
+                    
+                <label class="tarjetas-mokepon" for="Capipepo">
+                    <p>Capipepo</p>
+                    <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Unable to load">
+                </label>
+                <input name="mascotas" type="radio"  id="Capipepo">
+                    
+                <label class="tarjetas-mokepon" for="Ratigueya">
+                    <p>Ratigueya</p>
+                    <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Unable to load">
+                </label>
+                <input name="mascotas" type="radio" id="Ratigueya">
+            </div>
 
             <button id="boton-mascota">Seleccionar</button>
-            </div>
             
         </section>
 
-        <section id="section-attack"> 
-            <div id="Buttons-attack">
+        <section  id="section-attack"> 
+            <div  class="css-attack" id="Buttons-attack">
                 <h2>Elige un ataque:</h2>
-                <p>Tu mascosta <span id="PlayerPET"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-                <p>La mascota <span id="PCPET"></span> del enemigo tiene <span id="vidas-pc">3</span> vidas</p>
-                <button id="boton-fuego">Fuego</button>
-                <button id="boton-agua">Agua</button>
-                <button id="boton-tierra">Tierra</button>
+
+                <div class="combat-space">
+                    <div>
+                        <div id="Player-section"></div>
+                        <p>Tu mascosta <span id="PlayerPET"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                    </div>
+                    <div>
+                        <div id="Enemy-section"></div>
+                        <p>La mascota <span id="PCPET"></span> del enemigo tiene <span id="vidas-pc">3</span> vidas</p>
+            
+                    </div>
+    
+                    
+                </div>
+                <div>
+                    <button id="boton-fuego">Fuego</button>
+                    <button id="boton-agua">Agua</button>
+                    <button id="boton-tierra">Tierra</button>
+                </div>
             </div>    
         </section>
         

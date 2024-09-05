@@ -1,18 +1,99 @@
 
-h1{
-    color: #380c64;
+.titulo{
+
+    color: #A02334;
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #4F1787;
+    -webkit-text-stroke-color: #982B1C;
     font-family: "Amarante", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 50px;
+    margin: 0px;
 }
 
 h2 {
-    color: #180161;
+    color: #A02334;
+}
+
+#Section-pet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetas-mokepon{
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ff8c5279;
+    border-radius: 8px;
+}
+
+.tarjetas{
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    text-align: center;
+}
+
+.tarjetas img {
+    width: 65px;
+    margin-top: -25px;
+}
+
+.tarjetas p{
+    margin-top: 0px;
+    margin-bottom: 28px;
+}
+
+input{
+    display: none;
+}
+
+#boton-mascota{
+    margin-top: 15px;
+    background-color: #179BAE;
+    color: white;
+    border: solid 1px #0f5560;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+label:hover {
+    color: #FFD7C4;
+}
+
+.css-attack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.combat-space{
+    display: flex;
+}
+
+#Player-section img{
+    height: 150px;
+
+}
+
+#Enemy-section img{
+    height: 150px;
+
 }
 
 body {
-    background-color: #f98651;
+    background-color: #FFAD60;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
